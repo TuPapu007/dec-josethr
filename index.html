@@ -8,33 +8,62 @@
 </head>
 <body>
     <h1>Preguntas</h1>
-    <h2>Que es NodeJS?</h2>
-    <p>Es codigo abierto de JavaScript para crear aplicacion de red a tiempo real , eventos y esta basado en el motor V8 de Google.
-    </p>   
-    <h2>Perque es tant popular?</h2>
-        <p>Es gracias a las aplicaciones a tiempo real y usa el motor Javascript v8 De Chrome lo cual lo hace mas rapido tabien usa el modelo E/S impulsado por eventos y sin bloqueo</p>
+    <h2>1 que es vanilla JavaScript?</h2>
+    <p>En resumen seria JavaScript Puro , no tiene frameworks. y intenta enseñarnos las ventajas de no usar frameworks y que no tengamos que aprender de las librerias si no del propio javaScript</p>   
+    <h2>2 Diferencia els ECMA Script que pertañen i a JavaScript MOdern</h2>
+    <p>ECMAScript es un estándar de lenguaje de programación, como Lisp. Javascript es una implementación de este tipo JavaScript Viene de ECMAScript  y esta orientado a objetos y dinamico</p>
 
-    <h2>Que puedo hacer con node? qui l'uilitza empreses?</h2>
-    <p>Se puede hacer aplicaciones que vayan a tiempo real en la nube y puede ser utilizada por muchas personas </p>
+    <h2>3 qui va crear JavaScript? de quina empresa era?</h2>
+    <p>Fue desarrollado originalmente por Brendan Eich de la empresa Netscape </p>
 
     <p>Netflix Paypal Uber Ebay</p>
 
-    <h2>Que es NPM I NPX ?  que et permeten fer</h2>
-    <p>NPM es el sistema de paquetes por defecto de Node.js  Un repositorio grande utilizado para la publicacion de los projectos Node.js </p>
-
-    <p>NPX es  una herramienta CLI cuyo propósito es facilitar la instalación y la gestión de las dependencias alojadas en el registro npm.</p>
+    <h2>4 quina empresa hi ha actualment darrera de JavaScript?</h2>
+    <p>ECMA</p>
     
-    <h2>Perque serveix el paquet express de NodeJS?</h2>
-    <p>Express es uno framework web de los mas populares de Node y en su libreria tiene un gran numero de otros frameworks 
+    <h2>5 que es una arrow function ? a quin ES apareix (quin any)</h2>
+    <p>=> un ejemplo de lo que hace
+    //Ambas expresiones son equivalentes
+    // arrow function
+    const sum = (a, b) => (a + b);// función tradicional
+    const sum = function(a, b) {
+    return (a + b);
+    }
+    Aparece en el ES6
     </p>
-    <ul>
-        <li>Escritura de manejadores de peticiones con diferentes verbos HTTP en diferentes caminos URL </li>
-        <li>Integración con motores de renderización de "vistas" para generar respuestas mediante la introducción de datos en plantillas.</li>
-        <li>Establecer ajustes de aplicaciones web como qué puerto usar para conectar, y la localización de las plantillas que se utilizan para renderizar la respuesta.</li>
-    </ul>
+  
 
-    <h2>Que es blocking i non-blocking en NodeJS?</h2>
-    <p>El bloqueo es cuando la ejecución de JavaScript adicional al proceso Node.js debe esperar hasta que finalice una operación que no sea JavaScript</p>
-    <p>Una llamada sin bloqueo a JavaScript proporciona una función de devolución de llamada que se debe llamar cuando se haya completado la operación.</p>  
-</body>
+    <h2>6 que es un callback? Posa un exemple</h2>
+    <p>Las funciones callback suelen utilizarse mucho en bibliotecas y frameworks, como las aplicaciones JavaScript jQuery, Angular o node.js. Estas aplicaciones son adecuadas para crear funciones extensibles y se ejecutan únicamente después de que tenga lugar otro evento o circunstancia.
+
+    /*
+    document.getElementById("Button1").addEventListener("click", function() {
+        console.log("Se ha pulsado el botón");
+        }, false);
+    */
+    </p>    
+    <h2>7 Que es una promesa en JavaScript(promise ) posa un exemple Explica tambe la Diferencia entre la programacion sincrona i la programacion asincrona posa un exemple.</h2>
+    <p>Promise es un objeto que representa la terminación o el fracaso de una operación asíncrona
+    ejemplo
+    
+    doSomething().then(x => {
+        console.log('Parece que doSomething ha terminado con éxito');
+    })
+
+    Processo sincrona 
+    ejemplo
+    
+    si 100 estudiantes van a pedir las notas a consergeria 
+    El primer estudiante que entra le da su documentacion.
+    La de consergeria valida su documentacion
+    Y vuelve a comprobar en su base de datos
+    y la de consegeria le da sus notas
+
+    El primer estudiante que entra es el primero que sale
+
+
+    Processo asincrono
+    Se ejecuta en secuencia como si hubiria muchas filas por donde pasan los datos.
+    Multiples hilos de ejecución.</p>
+    </body>
 </html>
